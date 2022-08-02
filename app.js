@@ -11,6 +11,9 @@ app.get('/', (req, res) => {
 app.get('/pug', (req, res) => {
     res.render('index', { title: 'Hey', message: 'Hello there!' })
   })
+app.get('/scan', (req, res) => {
+    res.render('scanner', { title: 'Scan', message: 'Scanit!' })
+  })
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
